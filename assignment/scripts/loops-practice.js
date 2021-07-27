@@ -4,7 +4,9 @@ console.log('****** Loops Practice *******');
 // 1. 'for' loop
 
 console.log('---- 1. For loops ----');
+
 // Example: a for loop to console.log numbers from 0 to 3
+
 console.log('count from 0 to 3');
 
 // start i at 0, while i is < 4 do code between {}, afterwards add 1 to i (i++)
@@ -40,19 +42,35 @@ for (let i=2; i<11; i++){
   }
 }
 
-
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 
 console.log('STRETCH: countdown from 5 to 0');
 
+for (let i=5; i>=0; i--){
+  console.log(i);
+}
 
 // 2. For of loops
+
 console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-console.log('Some stars:');
 
+console.log('Some stars:');
+for (name of stars){
+  console.log(name);
+}
+
+for (var name of stars) {
+  console.log(name);
+}
+console.log(name);
+
+let i = 0;
+for (i in stars){
+  console.log('all the i in stars:', i);
+}
 
 // 3. While loops
 console.log('---- 3. While loop ----');
