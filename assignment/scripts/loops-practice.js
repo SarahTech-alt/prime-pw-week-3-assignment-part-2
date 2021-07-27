@@ -34,11 +34,11 @@ for (let i=3; i<6; i++) {
 
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
 
-for (let i=2; i<11; i++)
-do {
-    console.log(i)
+for (let i=2; i<11; i++){
+  if (i%2===0){
+    console.log(i);
   }
-while (i%2=0);
+}
 
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
