@@ -62,7 +62,6 @@ console.log('Some stars:');
 for (let name of stars) {
   console.log(name);
 }
-console.log(name);
 
 // alternate approachw to log each 'star' in array
 
@@ -79,21 +78,16 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 
-//checking output for nonexistent position
-
-console.log(Boolean(stars[5]));
-
-//returned false so will use boolean to execute while loop ...
+console.log('Some stars using while:');
 
 i = 0;
 
-while (stars[i]){
-  console.log(stars[i]);
+while (stars.length > i){
+  let names = stars[i];
+  console.log(names);
   i++;
 }
 
-
-console.log('Some stars using while:');
 
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
@@ -109,3 +103,11 @@ while (i<=max){
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+
+i = 10;
+min = 5;
+
+while (i>=min){
+  console.log(i);
+  i--;
+}
