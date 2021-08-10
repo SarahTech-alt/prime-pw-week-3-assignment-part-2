@@ -94,7 +94,7 @@ while (stars.length > i){
 console.log('count from 0 to 5');
 
 i = 0;
-max = 5;
+let max = 5;
 
 while (i<=max){
   console.log(i);
@@ -105,7 +105,7 @@ while (i<=max){
 console.log('count backwards from 10 to 5');
 
 i = 10;
-min = 5;
+let min = 5;
 
 while (i>=min){
   console.log(i);
